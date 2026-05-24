@@ -1,0 +1,44 @@
+@import './fonts.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-white: rgba(255, 255, 255, 1);
+    --light-green: rgba(237, 252, 242, 1);
+    --btn-primary: #087443;
+    --btn-secondary-bg: rgba(208, 213, 221, 1);
+    --btn-secondary-text: rgba(152, 162, 179, 1);
+    --color-text-secondary: #344054;
+    --color-surface-muted: #f2f4f7;
+    --color-text-muted: #667085;
+  }
+  body {
+    @apply font-sans antialiased;
+  }
+}
+
+@keyframes loaderEllipsePulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.92);
+    opacity: 0.85;
+  }
+}
+
+textarea.details-textarea {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+textarea.details-textarea::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
